@@ -25,6 +25,11 @@ color wombat256mod
 " Enable vim-pathogen
 "execute pathogen#infect()
 
+" ctr+P
+" https://github.com/kien/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+
 " Enable syntax highlighting
 syntax on
 
