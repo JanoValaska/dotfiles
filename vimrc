@@ -23,12 +23,12 @@ set t_Co=256
 color wombat256mod
 
 " Enable vim-pathogen
-"execute pathogen#infect()
+" https://github.com/tpope/vim-pathogen.git
+execute pathogen#infect()
 
-" ctr+P
+" Enable ctr+P
 " https://github.com/kien/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 
 " Enable syntax highlighting
 syntax on
