@@ -1,0 +1,7 @@
+[user]
+	name = Jesus Rodriguez
+	email = opposite.bracket@gmail.com
+[color]
+	ui = true
+[core]
+	editor = /usr/bin/vim

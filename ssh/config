@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# File Location
+# ~/.ssh/config
+
+Host e2-dev-app1 e2-dev-db e2-dev-queue
+    IdentityFile "~/Developer/SSH Keys/id_rsa"
+    ForwardAgent yes
+    Port 31982
+    User "jturo"
+
+Host e2-prod-app1 e2-prod-db e2-prod-queue
+    IdentityFile "~/Developer/SSH Keys/id_rsa"
+    ForwardAgent yes
+    Port 31982
+    User "jturo"
+
+Host vsr-prod-app1 vsr-prod-db vsr-prod-queue
+    IdentityFile "~/Developer/SSH Keys/id_rsa"
+    ForwardAgent yes
+    Port 31982
+    User "jturo"
+
+Host sw-prod-app1 sw-prod-db sw-prod-queue
+    IdentityFile "~/Developer/SSH Keys/id_rsa"
+    ForwardAgent yes
+    Port 31982
+    User "jturo"
