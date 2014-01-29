@@ -21,6 +21,16 @@ function link() {
     echo ""
 }
 
+function create_folder() {
+    echo " ... Linking $1"
+    if [ ! -d $1 ]; then
+        mkdir -p $1
+        echo " ... Created"
+    else
+        echo " ... Already exists"
+    fi
+}
+
 echo "#####################"
 echo "# Removing SymLinks #"
 echo "#####################"
@@ -40,3 +50,13 @@ link ~/Developer/Projects/bash/dotfiles/vimrc ~/.vimrc
 link ~/Developer/Projects/bash/dotfiles/vim ~/.vim
 link ~/Developer/Projects/bash/dotfiles/ssh ~/.ssh
 link ~/Developer/Projects/bash/dotfiles/gitconfig ~/.gitconfig
+
+echo "#############################"
+echo "# Creating Folder Structure #"
+echo "#############################"
+
+create_folder "~/Developer/Projects/CoffeeScript/"
+create_folder "~/Developer/Projects/Python/"
+create_folder "~/Developer/Projects/bash/"
+create_folder "~/Developer/Projects/C++/"
+create_folder "~/Developer/Projects/less/"
