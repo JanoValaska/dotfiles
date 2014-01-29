@@ -1,3 +1,4 @@
 *.swp
+.netrwhist
 vim/known_hosts
 ssh_generator.conf
