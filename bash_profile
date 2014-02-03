@@ -15,11 +15,12 @@ alias source_bash="source ~/.bash_profile"
 
 # Change Directories
 alias cd_projects="cd ~/Developer/Projects"
-alias cd_python="cd_projects && cd Python"
+alias cd_py="cd_projects && cd Python"
 alias cd_coffescript="cd_projects && cd CoffeeScript"
 alias cd_bash="cd_projects && cd bash"
 alias cd_cpp="cd_projects && cd C++"
 alias cd_less="cd_projects && cd less"
+alias cd_db="cd ~/Developer/Databases"
 
 # Compile Code
 alias compile_cpp11="g++ -std=c++11 -stdlib=libc++ $1"
