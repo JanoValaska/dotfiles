@@ -2,3 +2,4 @@
 .netrwhist
 vim/known_hosts
 ssh_generator.conf
+ssh/known_hosts
