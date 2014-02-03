@@ -4,6 +4,10 @@
 " Send more characters for redraws
 set ttyfast
 
+" Allows me to copy vim lines into
+" the clipboard on OSX
+set clipboard=unnamedplu
+
 " Enable mouse use in all modes
 set mouse=a
 
