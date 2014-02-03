@@ -15,12 +15,12 @@ alias sourcebash="source ~/.bash_profile"
 
 # Change Directories
 alias cdprojects="cd ~/Developer/Projects"
-alias cdpy="cd_projects && cd Python"
-alias cdcoffescript="cd_projects && cd CoffeeScript"
-alias cdbash="cd_projects && cd bash"
-alias cdcpp="cd_projects && cd C++"
-alias cdless="cd_projects && cd less"
 alias cddb="cd ~/Developer/Databases"
+alias cdpy="cdprojects && cd Python"
+alias cdcoffescript="cdprojects && cd CoffeeScript"
+alias cdbash="cdprojects && cd bash"
+alias cdcpp="cdprojects && cd C++"
+alias cdless="cdprojects && cd less"
 
 #
 alias removepyc="find . -name \"*.pyc\" -exec rm -rf {} \;"
