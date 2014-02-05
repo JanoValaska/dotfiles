@@ -25,5 +25,5 @@ alias cdless="cdprojects && cd less"
 #
 alias removepyc="find . -name \"*.pyc\" -exec rm -rf {} \;"
 
-# Compile Code
-alias compile_cpp11="g++ -std=c++11 -stdlib=libc++ $1"
+# Add a bin folder for bash scripts
+PATH=$PATH:$HOME/Developer/Projects/bash/dotfiles/bin/
