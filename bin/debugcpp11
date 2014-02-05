@@ -1,0 +1,3 @@
+#!/bin/sh
+
+g++ -std=c++11 -stdlib=libc++ $1.cpp ${*:2} -g -o $1.obj && lldb ./$1.obj
