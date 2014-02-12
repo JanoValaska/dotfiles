@@ -1,0 +1,18 @@
+#!/bin/sh
+# syncdb
+# Jesus Rodriguez
+# Description:
+#    syncs local database to remote database.
+# Use:
+#    syncdb {HOST} {REMOTE-DATABASE} {LOCAL-DATABASE}
+#    syncdb 111.111.111.111 PRODUCTION_site site
+
+function run {
+    echo "Downloading Remote DB ...";
+    ssh -C jturo@$1 "mysqldump -u root -p --opt --compress $2 | gzip -9 -c" > $1.sql.gz
+    echo "Uncompressing DB"
+    gunzip --verbose $1.sql.gz
+    echo "Syncronizing Local Database"
+    mysql -u root -p $3 < $1.sql
+}
+run $1 $2 $3

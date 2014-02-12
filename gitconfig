@@ -7,3 +7,6 @@
 	editor = /usr/bin/vim
 [push]
 	default = upstream
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
